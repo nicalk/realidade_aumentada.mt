@@ -8,7 +8,14 @@
   <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false" emdebbed ar.js="debugUIEnabled: false">
       <a-marker preset="hiro">
-        <a-image src="foto.jpg" rotation=" -90 0 0"></a-image>
+        <a-cubemap id="reflection">
+          <img src="foto.jpg">
+          <img src="foto.jpg">
+          <img src="foto.jpg">
+          <img src="foto.jpg">
+          <img src="foto.jpg">
+          <img src="foto.jpg">
+        </a-cubemap>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
