@@ -8,17 +8,8 @@
   <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false" emdebbed ar.js="debugUIEnabled: false">
       <a-marker preset="hiro">
-        <a-cubemap id="reflection">
-          <img src="foto.jpg">
-          <img src="foto.jpg">
-          <img src="foto.jpg">
-          <img src="foto.jpg">
-          <img src="foto.jpg">
-          <img src="foto.jpg">
-        </a-cubemap>
+        <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
       </a-marker>
-      <a-sphere material="envMap:#reflection; metalness:1.0; roughness:0.0">
-      </a-sphere>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
