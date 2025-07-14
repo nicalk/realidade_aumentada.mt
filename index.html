@@ -5,12 +5,15 @@
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
   </head>
+
   <body style="margin: 0; overflow: hidden;">
-    <video id="julianarica" src="video.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline muted style=“display: none;”></video>
-    <a-scene vr-mode-ui="enabled: false" emdebbed ar.js="debugUIEnabled: false">
+
+<video id="juliana" src="video.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline muted style=“display: none;”></video>
+
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
       <a-marker preset="hiro">
-        <a-video src="#julianarica" width="1.7" height="1" rotation="-90 0 0"></a-video>
-      </a-marker>
+        <a-video src="#juliana" width="1" height="0.5" position="0 0 0" rotation="-90 -90 0"></a-video>
+         </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
