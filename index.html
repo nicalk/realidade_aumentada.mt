@@ -7,9 +7,13 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false" emdebbed ar.js="debugUIEnabled: false">
+      <a-assets>
+        <img id="my-image" src="image.png">
+      </a-assets>
       <a-marker preset="hiro">
-        <a-box position="0 0.5 0" material="color : pink;"></a-box>
+        <a-image src="#my-image"></a-image>
       </a-marker>
+      <a-image src="Smi gle gle s mi.jpg"></a-image>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
