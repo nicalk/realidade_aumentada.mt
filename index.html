@@ -6,9 +6,10 @@
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
+    <video id="julianarica" autoplay loop="true" src="video.mp4"></video>
     <a-scene vr-mode-ui="enabled: false" emdebbed ar.js="debugUIEnabled: false">
       <a-marker preset="hiro">
-        <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+        <a-video></a-video>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
